@@ -81,6 +81,39 @@
 	<p><center>Use the Unblocker at your own risk. SAVAGEBEASTGAMES is not responsible for any consequences or trouble. By clicking "Unblock It!" you accept all responsibility to any sites you visit. Also, it has basically disabled all log-in systems. SAVAGEBEASTGAMES is not liable and responsible for MITM Attacks and SSL errors leading to hacking.</a><center><p>
     <div class="footer">
       <p>SAVAGEBEASTGAMES</a></p>
+		<script>
+function check() {
+var testV = 1;
+var username = prompt('Username: ');
+var pass1 = prompt('Password: ');
+while (testV < 3) {
+if (!pass1 || !username){ 
+history.go(-1);
+}
+if (username == "savagebeastgames" && pass1=="slaahleatlaal") {
+alert('Press OK to enter beta page');
+window.open('https://sbg-beta.weebly.com');
+break;
+} else{
+    alert('Invalid username or password!');
+    testV+=1;  
+}
+testV+=1;
+pass1 = 
+prompt('Access Denied - Password Incorrect','Enter password');
+}
+  if (pass1.toLowerCase()!="password" && testV ==3){
+alert('Intruder Detected!');
+return " ";
+}
+}
+</script>
+<center>
+<form>
+<input type="button" value="Test" onclick="check()">
+</form>
+</center>
+
     </div>
   
   </div>
